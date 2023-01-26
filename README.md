@@ -1,2 +1,2 @@
 # sass
-Primeiros passos com sasss
+Primeiros passos com sass
