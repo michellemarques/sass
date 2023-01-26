@@ -1,0 +1,97 @@
+@import 'variaveis.scss';
+@import 'mixin.scss';
+
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        background: $cor-principal ;
+        margin-bottom: 2px;
+    }
+}
+
+// -----------------------------------
+
+@mixin titulo ($cor, $cor-bg: black) {
+    color: $cor;
+    background-color: $cor-bg;
+    padding: 10px 5px;
+}
+
+h1{
+    
+    @include titulo (white);
+}
+h2{
+    
+    @include titulo (yellow);
+}
+
+// -------------------------------------
+// HERANÇA
+// Multiplas diretivas
+
+.classe1 {
+    color: red;
+}
+.classe2 {
+    background-color: black;
+}
+.vermelho {
+    @extend .classe1;
+    @extend .classe2;
+}
+
+// Encadeamento de diretivas
+// Placeholders (%)
+// serve para não mostrar as classes no css (%)
+
+%pai {
+    color: red;
+}
+%filho {
+    @extend %pai;
+    background-color: black;
+}
+.erro {
+    @extend %filho;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+// Diretivas de controle
+$cor: pink;
+@if($cor == green) {
+    p{
+        color: $cor;
+    }
+}@else if($cor == red){
+    p{
+        color: $cor;
+    }
+}@else{
+    p{
+        color: black;
+    }
+}
+
+// Diretivas de controle emixins
+
+@mixin teme($tema: padrao) {
+    @if($tema == natal) {
+        
+        color: white;
+        background-color: red;
+        
+    }@else if($tema == blackfriday){
+        
+        color: white;
+        background-color: black;
+        
+    }@else{
+        color: black;
+        background-color: white;
+    }
+} 
+
+body{
+    @include teme();
+}

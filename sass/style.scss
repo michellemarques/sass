@@ -1,0 +1,61 @@
+/* 
+through  = inclui tudo
+to = não incçui o ultimo item 
+*/
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        background: green ;
+        margin-bottom: 2px;
+    }
+}
+
+/* while */
+$contador: 1;
+
+@while $contador < 5 {
+    .item-#{$contador} {
+        background: gray ;
+        margin-bottom: 2px;
+        padding: 10px;
+    }
+    $contador: $contador + 1;
+}
+
+/* each */
+$lista: red, yellow, pink;
+$contador: 1;
+
+@each $cor in $lista {
+    .item-#{$contador} {
+        background: $cor ;
+        margin-bottom: 2px;
+        padding: 10px;
+    }
+    $contador: $contador + 1;
+}
+
+/* função */
+
+$total: 12;
+@function largura-coluna($coluna){
+    @return percentage($coluna/$total);
+}
+
+@for $i from 1 through $total {
+    .col-#{$i} {
+        background: yellowgreen;
+        border: solid 1px black;
+        margin: 10px;
+        width: largura-coluna($i);
+    }
+}
+
+/* outras funções 
+mix(green, orange, 25%)
+darken($color: blue, $amount: 10)
+lighten($color: blue, $amount: 40)
+*/
+.alerta {
+    color: yellow;
+    background: lighten($color: blue, $amount: 40);
+}

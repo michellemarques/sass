@@ -1,0 +1,58 @@
+.item-1 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.item-3 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+  padding: 10px 5px;
+}
+
+h2 {
+  color: yellow;
+  background-color: black;
+  padding: 10px 5px;
+}
+
+.classe1, .vermelho {
+  color: red;
+}
+
+.classe2, .vermelho {
+  background-color: black;
+}
+
+.erro {
+  color: red;
+}
+
+.erro {
+  background-color: black;
+}
+
+.erro {
+  padding: 15px;
+  border: 1px solid red;
+}
+
+p {
+  color: black;
+}
+
+body {
+  color: black;
+  background-color: white;
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* 
+through  = inclui tudo
+to = não incçui o ultimo item 
+*/
+.item-1 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item-3 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+/* while */
+.item-1 {
+  background: gray;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+.item-2 {
+  background: gray;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+.item-3 {
+  background: gray;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+.item-4 {
+  background: gray;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+/* each */
+.item-1 {
+  background: red;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+.item-2 {
+  background: yellow;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+.item-3 {
+  background: pink;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+/* função */
+.col-1 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 25%;
+}
+
+.col-4 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 50%;
+}
+
+.col-7 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 75%;
+}
+
+.col-10 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  background: yellowgreen;
+  border: solid 1px black;
+  margin: 10px;
+  width: 100%;
+}
+
+/* outras funções 
+mix(green, orange, 25%)
+darken($color: blue, $amount: 10)
+lighten($color: blue, $amount: 40)
+*/
+.alerta {
+  color: yellow;
+  background: #ccccff;
+}
+
+/*# sourceMappingURL=style.css.map */
